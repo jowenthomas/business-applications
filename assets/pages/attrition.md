@@ -10,7 +10,8 @@
     <li><a href='#future'>Future Work</a></li>
 </ol>
 
-<a id='results'></a><h2>Summary of Results</h2>
+<a id='results'></a>
+<h2>Summary of Results</h2>
 
 In our data, we have at our disposable 35 employee attributes for 1470 employees.  Within these attributes, we have a record of whether the employee has left the company, which is marked by "Attrition" with possible values of "Yes" or "No."  We would like to better understand how the remaining 34 employee attributes could be used to inform a discussion on why a given employee left the company.  Naturally, this will also yield some insight into the attributes important for employee retention.  We approach the present work focused on discerning the structure of the given data, and do not establish a predictive model.
 
