@@ -36,7 +36,8 @@ plt.show()
     
 
 
-<a id='source'></a><h2>Data Source and Discussion</h2>
+<a id='source'></a>
+<h2>Data Source and Discussion</h2>
 
 This is fictional data, made available by <a href='https://developer.ibm.com/patterns/data-science-life-cycle-in-action-to-solve-employee-attrition-problem/#description' target='_blank'>IBM</a>.  Included are 1470 observations for the following columns:
 
@@ -233,7 +234,8 @@ parent_entropy - total_child_entropy
 
 Indicating a slight decrease in entropy, and we can conclude that the attribute does provide information on the value of our target.
 
-<a id='data'></a><h2>Data Pre-Processing</h2>
+<a id='data'></a>
+<h2>Data Pre-Processing</h2>
 
 In order to find the information gain for all relevant variables, we will need to make some adjustments to our data set, which we will save in a new dataframe.  First, we will establish those variables that may be retained unchanged and identify those columns that are not relevant to the present analysis.  Then, we will adjust the existing categorical variables to have more descriptive names, rather than the numerical categorization with which the data were labelled.  Finally, because the above discussion of entropy relies on the use of categorical variables, we will bin the ratio variables into thirds and apply categorical labels.
 
@@ -800,7 +802,8 @@ plt.show()
 
 note: while this binning process does lose some of the granularity of the data observations, we have mostly retained the skewed-right attribute of each distribution.
 
-<a id='ig'></a><h2>Information Gain for All Variables</h2>
+<a id='ig'></a>
+<h2>Information Gain for All Variables</h2>
 
 With our data now in a useable form, we turn our attention to computing the information gain for each variable.  We will follow the reasoning in our worked example, and define some general functions to automate the requisite calculations.
 
@@ -1035,7 +1038,8 @@ plt.show()
     
 
 
-<a id='future'></a><h2>Future Work</h2>
+<a id='future'></a>
+<h2>Future Work</h2>
 
 This work only establishes IG on one level of partitioning.  We will expand these results to build a decision tree with IG rating for the most effective nested partitions.  Note for future reference: this will require adjusting the totalChildEntropy function so that it looks at the relevant parent node (perhaps implementing a stack to track a descending path), rather than the hardcoded version of attrition as I did here.
 
