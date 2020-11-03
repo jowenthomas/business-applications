@@ -65,7 +65,8 @@ attrition_full.columns
 
 While this data is very clean, we will adjust the structure to fit our present purposes.  The details and motivations are discussed in the <a href='#data'>Data Pre-Processing</a> section below.
 
-<a id='example'></a><h2>Entropy and Information Gain Worked Example</h2>
+<a id='example'></a>
+<h2>Entropy and Information Gain Worked Example</h2>
 
 Given 35 attributes with which to measure an employee, it is a daunting task to hold in one's head the full complexity of their behavior over so many dimensions.  As such, the fundamental task we work through here is finding a way to segment the population of employees into groups with respect to Attrition, our so-called target variable.  We begin this process in this section, determining if one variable, BusinessTravel, provides better information if we include it in establishing our segmented groups than simply segmenting along Attrition alone.
 
